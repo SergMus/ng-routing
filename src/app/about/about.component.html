@@ -1,0 +1,23 @@
+<div class="container">
+  <h1>About</h1>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem,
+    voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+    fuga quas, quod tenetur iure sunt ad illum porro ex deserunt! Lorem ipsum
+    dolor sit amet consectetur adipisicing elit. Laboriosam, sit doloremque
+    incidunt possimus quas aspernatur. Dignissimos tempore dolor harum
+    doloremque vero officiis ipsa saepe facilis sed suscipit alias voluptatibus
+    quam fugit quae et similique at, esse expedita nemo nulla! Quo.
+  </p>
+
+  <p>
+    <a
+      [routerLink]="['/about', 'extra']"
+      *ngIf="showMore"
+      (click)="showMore = !showMore"
+      >Show more</a
+    >
+  </p>
+
+  <router-outlet></router-outlet>
+</div>

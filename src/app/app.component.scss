@@ -1,0 +1,59 @@
+@import "../stylings/variables.scss";
+
+.navbar {
+  background-color: #dc434d;
+  padding: 20px 40px;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  color: white;
+
+  a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    &:active {
+      color: red;
+    }
+  }
+
+  ul {
+    display: flex;
+    li {
+      list-style: none;
+      margin-right: 15px;
+      font-size: 18px;
+      font-weight: 600;
+      &.active > a {
+        color: $grey_color;
+        &:active {
+          color: red;
+        }
+      }
+      & > a:last-child {
+        margin-right: 20px;
+      }
+    }
+  }
+
+  .btn {
+    padding: 8px 10px;
+    min-width: 80px;
+    color: white;
+    border-radius: 5px;
+    background: $grey_color;
+    border: none;
+    cursor: pointer;
+    &:active {
+      background-color: #000;
+    }
+  }
+}
+
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+  .card {
+    margin-top: 50px;
+  }
+}

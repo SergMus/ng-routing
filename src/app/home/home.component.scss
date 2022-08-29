@@ -1,0 +1,24 @@
+@import "./../../stylings/variables.scss";
+
+.container {
+  border: 1px solid #ccc;
+  padding: 30px;
+  h1 {
+    margin-bottom: 20px;
+  }
+  p {
+    margin-bottom: 30px;
+  }
+  .btn {
+    padding: 8px 10px;
+    min-width: 80px;
+    color: white;
+    border-radius: 5px;
+    background: $grey_color;
+    border: none;
+    cursor: pointer;
+    &:active {
+      background-color: #000;
+    }
+  }
+}
